@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../popup.css" />
+		<title>Create User</title>
+	</head>
+	<body>
+
+		<div class="container">
+			<h2 style="text-align: center;">Create New User</h2>
+			<div class="email error" id="provideError"></div>
+
+			<form>
+				<div class="form-control">
+					<label>Name</label>
+					<input type="text" id="name" required />
+					<div class="email error" for="errorName" name="errorName" id="errorName"></div>
+				</div>
+
+				<div class="form-control">
+					<label>Email</label>
+					<input type="text" id="email" required />
+					<div class="email error" for="errorEmail" name="errorEmail" id="errorEmail"></div>
+				</div>
+
+				<div class="form-control">
+					<label>Password</label>
+					<input type="password" id="password" required />
+					<div class="email error" for="errorPassword" name="errorPassword" id="errorPassword"></div>
+
+				</div>
+
+				<button class="btn" id="createBtn">Create</button>
+			</form>
+			<div id="res"></div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+			integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+			crossorigin="anonymous"
+		></script>
+		<script src="createUser.js"></script>
+		<script src="../popup.js"></script>
+	</body>
+</html>

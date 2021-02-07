@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../popup.css" />
+		<title>Log In</title>
+	</head>
+	<body>
+		
+
+			<!-- <form>
+    <h2>Login</h2>
+    <label for="email">Email</label>
+    <input type="text" name="email" required>
+    <div class="email error"></div>
+    
+    <label for="email">Password</label>
+    <input type="password" name="password" required>
+    <div class="password error"></div>
+
+    <button>Login</button>
+</form> -->
+			<form>
+				<h2>Login</h2>
+				<h3 id="provideError"></h3>
+
+				<div class="form-control">
+					<input type="text" id="email" name="email" required />
+					<label>Email</label>
+					<div for="errorEmail" class="email error" name="errorEmail" id="errorEmail"></div>
+				</div>
+
+				<div class="form-control">
+					<input type="password" id="password" name="password"  required />
+					<label>Password</label>
+					<div for="errorPassword" class="password error" name="errorPassword" id="errorPassword"></div>
+				</div>
+				<button class="btn" id="login-btn">Login</button>
+			</form>
+
+			<div id="res"></div>
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+			integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+			crossorigin="anonymous"
+		></script>
+		<script src="login.js"></script>
+		<script src="../popup.js"></script>
+		
+	</body>
+</html>
